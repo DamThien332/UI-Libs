@@ -1,4 +1,4 @@
---dsadsa
+--//Modified By DamThien\\--
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -43,7 +43,7 @@ local redzlib = {
       }),
       ["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
       ["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-      ["Color Theme"] = Color3.fromRGB(0, 255, 255),
+      ["Color Theme"] = Color3.fromRGB(204, 0, 204),
       ["Color Text"] = Color3.fromRGB(243, 243, 243),
       ["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
     },
@@ -483,7 +483,7 @@ function redzlib:MakeWindow(Configs)
   local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
     Size = UDim2.fromOffset(UISizeX, UISizeY),
     Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
-    BackgroundTransparency = 0.03,
+    BackgroundTransparency = 0.09,
     Name = "Hub"
   }), "Main")Make("Gradient", MainFrame, {
     Rotation = 45
@@ -636,8 +636,8 @@ function redzlib:MakeWindow(Configs)
   local Window, FirstTab = {}, false
   function Window:CloseBtn()
     local Dialog = Window:Dialog({
-      Title = "Close",
-      Text = "Are you sure you want to close this script??",
+      Title = "Close Script",
+      Text = "Do you really want to close this Script?",
       Options = {
         {"Confirm", function()
           ScreenGui:Destroy()

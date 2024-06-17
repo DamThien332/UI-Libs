@@ -1,4 +1,4 @@
---//Modified By DamThien\\--
+--//Modified By DammThien\\--
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -138,7 +138,7 @@ local SetProps, SetChildren, InsertTheme, Create do
     end
   end
   
-  local success, debug = pcall(Save, "redz library V5.lua")
+  local success, debug = pcall(Save, "Configurations | Byte Hub.lua")
   
   if not success then
     warn(debug)
@@ -146,7 +146,7 @@ local SetProps, SetChildren, InsertTheme, Create do
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-  Name = "redz Library V5",
+  Name = "Configurations | Byte Hub.lua",
 }, {
   Create("UIScale", {
     Scale = UIScale,
@@ -414,7 +414,7 @@ function redzlib:SetTheme(NewTheme)
   if not VerifyTheme(NewTheme) then return end
   
   redzlib.Save.Theme = NewTheme
-  SaveJson("redz library V5.lua", redzlib.Save)
+  SaveJson("Configurations | Byte Hub.lua", redzlib.Save)
   Theme = redzlib.Themes[NewTheme]
   
   table.foreach(redzlib.Instances, function(_,Val)
@@ -442,7 +442,7 @@ function redzlib:SetScale(NewScale)
 end
 
 function redzlib:MakeWindow(Configs)
-  local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
+  local WTitle = Configs[1] or Configs.Name or Configs.Title or "REDZ UI"
   local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
   local SaveCfg = Configs[3] or Configs.SaveFolder or false
   local SaveRejoin = Configs[4] or Configs.SaveRejoin or false
@@ -598,13 +598,13 @@ function redzlib:MakeWindow(Configs)
   ConnectSave(ControlSize1, function()
     if not Minimized then
       redzlib.Save.UISize = {MainFrame.Size.X.Offset, MainFrame.Size.Y.Offset}
-      SaveJson("redz library V5.lua", redzlib.Save)
+      SaveJson("Configurations | Byte Hub.lua", redzlib.Save)
     end
   end)
   
   ConnectSave(ControlSize2, function()
     redzlib.Save.TabSize = MainScroll.Size.X.Offset
-    SaveJson("redz library V5.lua", redzlib.Save)
+    SaveJson("Configurations | Byte Hub.lua", redzlib.Save)
   end)
   
   local ButtonsFolder = Create("Folder", TopBar, {

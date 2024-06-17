@@ -1,4 +1,4 @@
---Modified by ne
+--lkdnfjlkdsjkf
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -37,12 +37,12 @@ local redzlib = {
     },
     DamThien = {
       ["Color Hub 1"] = ColorSequence.new({
-        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
+        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(24, 24, 20)),
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
         ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
       }),
       ["Color Hub 2"] = Color3.fromRGB(45, 45, 45),
-      ["Color Stroke"] = Color3.fromRGB(255, 255, 255),
+      ["Color Stroke"] = Color3.fromRGB(45, 45, 45),
       ["Color Theme"] = Color3.fromRGB(0, 0, 0),
       ["Color Text"] = Color3.fromRGB(245, 245, 245),
       ["Color Dark Text"] = Color3.fromRGB(190, 190, 190)

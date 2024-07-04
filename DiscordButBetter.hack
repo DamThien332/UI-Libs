@@ -2114,3 +2114,4 @@ function DiscordLib:Window(text,mainclr,cls)
 	end
 	return ServerHold
 end
+return DiscordLib

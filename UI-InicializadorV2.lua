@@ -1,4 +1,4 @@
--- Services
+--Services
 local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 local HttpService = game:GetService("HttpService")
@@ -318,7 +318,7 @@ function Library:Window(Title, Func, Options)
     AImage.Name = "AImage"
 	AImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	AImage.Size = UDim2.new(1, 0, 0.08, 100)
-	AImage.Image = "http://www.roblox.com/asset/?id=8899558070"
+	AImage.Image = "http://www.roblox.com/asset/?id=16999945654"
     AImage.Parent = Details
 
     local ImageCorner = Instance.new("UICorner")

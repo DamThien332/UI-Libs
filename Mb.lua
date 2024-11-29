@@ -1473,3 +1473,4 @@ function bm:Window(d, br, bs)
 	end;
 	return bS
 end;
+return bm

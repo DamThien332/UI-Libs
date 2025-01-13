@@ -1,4 +1,6 @@
-                    do
+--update 1
+
+do
                         if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib") then
                             game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib"):Destroy()
                         end

@@ -1141,7 +1141,7 @@
                                 b.Position = UDim2.new(0, 0, 0, 10)
                                 b.Size = UDim2.new(0, 455, 0, 2)
                             end
-                            function a:AddNLabel(a)
+                            --[[function a:AddNLabel(a)
                                 local b = Instance.new("TextLabel")
                                 local c = Instance.new("UIPadding")
                                 local d = {}
@@ -1177,8 +1177,54 @@
                                     b.Text = a
                                 end
                                 return d
-                            end
-                            function a:AddLabel(a, b)
+                            end]]
+
+    function a:AddNLabel(a)
+      
+    local label = Instance.new("TextLabel")
+    local padding = Instance.new("UIPadding")
+    local functions = {}
+
+    label.Name = "Label"
+    label.Parent = e
+    label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    label.BackgroundTransparency = 0
+    label.Size = UDim2.new(0, 455, 0, 57)
+    label.Font = Enum.Font.GothamSemibold
+    label.TextColor3 = Color3.fromRGB(225, 225, 225)
+    label.TextSize = 11
+    label.Text = labelText
+    label.TextXAlignment = Enum.TextXAlignment.Left
+
+    padding.PaddingLeft = UDim.new(0, 10)
+    padding.Parent = label
+    padding.Name = "PaddingLabel"
+
+
+    local corner = Instance.new("UICorner")
+    corner.Name = "MainCorner"
+    corner.CornerRadius = UDim.new(0, 5)
+    corner.Parent = label
+
+    local avatarImage = Instance.new("ImageLabel")
+    avatarImage.Parent = label
+    avatarImage.BackgroundColor3 = Color3.new(1, 1, 1)
+    avatarImage.BorderColor3 = Color3.new(0, 0, 0)
+    avatarImage.BackgroundTransparency = 1
+    avatarImage.BorderSizePixel = 0
+    avatarImage.Position = UDim2.new(0.851666677, 0, -0.1, 0)
+    avatarImage.Size = UDim2.new(0, 60, 0, 60)
+    avatarImage.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.UserId .. "&width=420&height=420&format=png"
+
+    function functions:SetText(newText)
+        label.Text = newText
+    end
+
+    return functions
+end
+
+    
+       function a:AddLabel(a, b)
                                 local c = Instance.new("Frame")
                                 c.Name = "Mainl"
                                 c.Parent = e

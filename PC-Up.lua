@@ -1,6 +1,4 @@
---update 1
-
-do
+                    do
                         if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib") then
                             game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib"):Destroy()
                         end
@@ -80,7 +78,7 @@ do
                         h.BorderSizePixel = 0
                         h.Position = UDim2.new(0.953, 0, 0.029, 0)
                         h.Size = UDim2.new(0, 17, 0, 18)
-                        h.Image = "rbxassetid://9886659671"
+                        h.Image = "rbxassetid://107835828473084"
                         h.ImageColor3 = Color3.fromRGB(255, 255, 255)
                         h.MouseEnter:Connect(
                             function()
@@ -1171,7 +1169,7 @@ do
                                 a.BackgroundTransparency = 1.000
                                 a.BorderSizePixel = 0
                                 a.Position = UDim2.new(0.851666677, 0, -0.1, 0)
-                                a.Size = UDim2.new(0, 55, 0, 55)
+                                a.Size = UDim2.new(0, 60, 0, 60)
                                 a.Image =
                                     "https://www.roblox.com/headshot-thumbnail/image?userId=" ..
                                     game.Players.LocalPlayer.UserId .. "&width=420&height=420&format=png"
@@ -1180,9 +1178,7 @@ do
                                 end
                                 return d
                             end
-
-    
-       function a:AddLabel(a, b)
+                            function a:AddLabel(a, b)
                                 local c = Instance.new("Frame")
                                 c.Name = "Mainl"
                                 c.Parent = e

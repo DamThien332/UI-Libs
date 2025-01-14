@@ -1,4 +1,5 @@
-                    do
+--meque
+do
                         if game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib") then
                             game.Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("RaitoLib"):Destroy()
                         end

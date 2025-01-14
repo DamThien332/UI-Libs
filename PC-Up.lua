@@ -1168,11 +1168,10 @@
                                 a.BorderColor3 = Color3.new(0, 0, 0)
                                 a.BackgroundTransparency = 1.000
                                 a.BorderSizePixel = 0
-                                a.Position = UDim2.new(0.851666677, 0, -0.1, 0)
-                                a.Size = UDim2.new(0, 60, 0, 60)
+                                a.Position = UDim2.new(0.851666677, 0, -0.2, 0) --   a.Position = UDim2.new(0.851666677, 0, -0.1, 0)
+                                a.Size = UDim2.new(0, 57, 0, 57)
                                 a.Image =
-                                    "https://www.roblox.com/headshot-thumbnail/image?userId=" ..
-                                    game.Players.LocalPlayer.UserId .. "&width=420&height=420&format=png"
+                                    "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.UserId .. "&width=420&height=420&format=png"
                                 function d:Set2(a)
                                     b.Text = a
                                 end
